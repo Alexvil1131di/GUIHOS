@@ -1,0 +1,26 @@
+{
+  "Details": {
+    "description": "Auto imported from components/Details.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Navigation": {
+    "description": "Auto imported from components/Navigation.vue"
+  },
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "Option": {
+    "description": "Auto imported from components/Option.vue"
+  },
+  "PSPDFKitContainer": {
+    "description": "Auto imported from components/PSPDFKitContainer.vue"
+  },
+  "Slider": {
+    "description": "Auto imported from components/Slider.vue"
+  },
+  "Tutorial": {
+    "description": "Auto imported from components/Tutorial.vue"
+  }
+}

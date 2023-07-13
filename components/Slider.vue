@@ -77,7 +77,7 @@ export default {
 
         const options = {
             defaultPosition: 1,
-            interval: 3000,
+            interval: 4000,
 
             indicators: {
                 activeClasses: 'bg-white dark:bg-gray-800',
@@ -125,6 +125,12 @@ export default {
         nextButton.addEventListener('click', () => {
             carousel.next();
         });
+
+        const autoMove = () => {
+            carousel.next();
+        };
+
+        setInterval(autoMove, options.interval);
 
     },
 }

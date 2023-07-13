@@ -12,17 +12,20 @@
         <Details v-for="item in details" :info="item" />
       </div>
     </div>
+    <PSPDFKitContainer :pdfFile="pdfFile" @loaded="handleLoaded" />
   </div>
 </template>
 
 <script>
 import Slider from '@/components/Slider';
 import Details from '@/components/Details';
+import PSPDFKitContainer from '@/components/PSPDFKitContainer';
 
 export default {
   component: {
     Slider,
-    Details
+    Details,
+    PSPDFKitContainer
   },
   data() {
     return {
@@ -40,7 +43,8 @@ export default {
           title: "Quienes somos?",
           information: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, recusandae? Vero velit eos accusantium a ab minus dolores, nemo voluptate necessitatibus excepturi optio, cupiditate repellendus quos nobis, dignissimos labore quas."
         }
-      ]
+      ],
+      pdfFile: this.pdfFile || "/document.pdf",
     }
   },
 }
