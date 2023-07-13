@@ -1,19 +1,51 @@
 <template>
-    <figure class="relative transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
-        <a href="#">
-            <img class="rounded-lg w-full"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-3.png"
-                alt="image description">
-        </a>
-        <figcaption class="absolute px-4 text-lg text-white bottom-6">
-            <h1 class="text-3xl">{{ info.title }}</h1>
-            <p>{{ info.information }}</p>
-        </figcaption>
-    </figure>
-</template>
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+        <div class="w-full h-[270px] bg-center bg-cover bg-no-repeat"
+            :style="`background-image: url(${info.urlImage}); background-size:65% auto;`">
+        </div>
 
+        <div class="p-5">
+
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900 dark:text-white">{{ info.title }}
+            </h5>
+
+            <p class="mb-3 font-normal text-gray-700 text-justify dark:text-gray-400">{{ info.information }}</p>
+            <a href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Ver mas <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+            </a>
+        </div>
+    </div>
+</template>
+  
+<style scoped>
+.card {
+    background-color: #f3f4f6;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.image-container {
+    position: relative;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+</style>
+  
 <script>
 export default {
     props: ['info']
 }
 </script>
+  

@@ -1,13 +1,13 @@
 
 <template>
     <div class="relative w-full">
-        <div class="relative h-56 overflow-hidden md:h-96">
+        <div class="relative h-56 overflow-hidden md:h-96 brightness-50">
             <div id="carousel-item-1" class="hidden duration-700 ease-in-out">
-                <img src="@/assets/img/carousel-1.svg"
+                <img src="@/assets/slider/logoWhite.png"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
             <div id="carousel-item-2" class="hidden duration-700 ease-in-out">
-                <img src="@/assets/img/carousel-1.svg"
+                <img src="@/assets/slider/ramonGay.jpg"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
             <div id="carousel-item-3" class="hidden duration-700 ease-in-out">

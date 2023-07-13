@@ -1,5 +1,12 @@
 [
   {
+    "name": "aboutUs",
+    "path": "/aboutUs",
+    "component": "/home/olijapa/Escritorio/ramon/pages/aboutUs.vue",
+    "chunkName": "pages/aboutUs",
+    "_name": "_9318bacc"
+  },
+  {
     "name": "catalog",
     "path": "/catalog",
     "component": "/home/olijapa/Escritorio/ramon/pages/catalog.vue",

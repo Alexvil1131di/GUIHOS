@@ -1,5 +1,5 @@
 <template>
-    <div class="pdf-container"></div>
+    <div class="pdf-container "></div>
 </template>
   
 <script>
@@ -43,8 +43,10 @@ export default {
         async loadPSPDFKit() {
             import("pspdfkit")
                 .then((PSPDFKit) => {
+
                     this.PSPDFKit = PSPDFKit;
                     PSPDFKit.unload(".pdf-container");
+
                     return PSPDFKit.load({
                         document: this.pdfFile,
                         container: ".pdf-container",
