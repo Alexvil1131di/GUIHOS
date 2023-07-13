@@ -1,0 +1,30 @@
+[
+  {
+    "name": "aboutUs",
+    "path": "/aboutUs",
+    "component": "/home/olijapa/Escritorio/ramon/pages/aboutUs.vue",
+    "chunkName": "pages/aboutUs",
+    "_name": "_9318bacc"
+  },
+  {
+    "name": "catalog",
+    "path": "/catalog",
+    "component": "/home/olijapa/Escritorio/ramon/pages/catalog.vue",
+    "chunkName": "pages/catalog",
+    "_name": "_38354ca8"
+  },
+  {
+    "name": "test",
+    "path": "/test",
+    "component": "/home/olijapa/Escritorio/ramon/pages/test.vue",
+    "chunkName": "pages/test",
+    "_name": "_f52449da"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/olijapa/Escritorio/ramon/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_412342a1"
+  }
+]

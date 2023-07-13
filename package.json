@@ -13,6 +13,7 @@
     "core-js": "^3.25.3",
     "flowbite": "^1.7.0",
     "nuxt": "^2.15.8",
+    "pspdfkit": "^2023.3.4",
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10"
