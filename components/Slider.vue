@@ -13,10 +13,9 @@
                     </p>
                     <p
                         class="absolute top-1/2 left-1/2 text-white transform text-justify hidden 2xl:block -translate-x-1/2 -translate-y-[-50%]">
-                        GUIHOS es un proyecto que se refiere a la "Guía para el Diseño de Áreas Hospitalarias" (GUIHOS es el
-                        acrónimo de este nombre). Es una iniciativa orientada a proporcionar una guía completa y actualizada
-                        sobre el diseño de áreas hospitalarias, centrándose específicamente en las necesidades y los avances
-                        en materia hospitalaria de la República Dominicana.
+                        Descubre GUIHOS: La guía para el diseño de áreas hospitalarias en la República Dominicana. Obtén
+                        pautas, recomendaciones y estándares actualizados que mejorarán la calidad y eficacia de tus
+                        proyectos
                     </p>
                 </nuxt-link>
             </div>

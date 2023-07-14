@@ -20,7 +20,7 @@
                 </div>
             </div>
         </div>
-        <div class="container my-28 mx-auto grid gap-5 grid-cols-1 md:grid-cols-2">
+        <div class="container flex w-full items-center justify-center my-28 mx-auto gap-5 ">
             <Option v-for="item in options" :info="item" />
         </div>
     </div>
@@ -39,15 +39,10 @@ export default {
                 {
                     title: "Sala de operaciones cardiotorácicas",
                     details: "Inspirado en las propuestas de la World Board of Design for Health (WBDG), nuestro Quirófano de Cardiología ofrece un entorno seguro y eficiente para realizar procedimientos cardíacos especializados. Equipado con tecnología de vanguardia y una disposición cuidadosamente planificada, garantiza la precisión y el confort necesarios para una atención cardiológica de excelencia.",
-                    link1: "",
+                    link1: "/opcion1",
                     link2: "",
                 },
-                {
-                    title: "Central de esterilización",
-                    details: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-                    link1: "",
-                    link2: "",
-                }
+
             ]
         }
     },
