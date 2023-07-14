@@ -1,24 +1,82 @@
 
 <template>
-    <div class="relative w-full">
-        <div class="relative h-56 overflow-hidden md:h-96 brightness-50">
+    <div class="relative w-full h-fit">
+        <div class="relative h-56 overflow-hidden md:h-[600px]">
             <div id="carousel-item-1" class="hidden duration-700 ease-in-out">
-                <img src="@/assets/slider/logoWhite.png"
-                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <nuxt-link to="/conocenos#queEsGuihos"
+                    class="absolute block w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <img src="@/assets/slider/logoWhite.png" class="w-full brightness-[45%] object-center object-cover"
+                        alt="...">
+                    <p
+                        class="absolute top-1/2 left-1/2 text-white text-xl font-bold transform -translate-x-1/2 -translate-y-1/2">
+                        ¿Qué es GUIHOS?
+                    </p>
+                    <p
+                        class="absolute top-1/2 left-1/2 text-white transform text-justify hidden 2xl:block -translate-x-1/2 -translate-y-[-50%]">
+                        GUIHOS es un proyecto que se refiere a la "Guía para el Diseño de Áreas Hospitalarias" (GUIHOS es el
+                        acrónimo de este nombre). Es una iniciativa orientada a proporcionar una guía completa y actualizada
+                        sobre el diseño de áreas hospitalarias, centrándose específicamente en las necesidades y los avances
+                        en materia hospitalaria de la República Dominicana.
+                    </p>
+                </nuxt-link>
             </div>
             <div id="carousel-item-2" class="hidden duration-700 ease-in-out">
-                <img src="@/assets/slider/ramonGay.jpg"
-                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <nuxt-link to="/conocenos"
+                    class="absolute block w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <img src="@/assets/slider/ramonGay.jpg" class="w-full brightness-[45%] object-center object-cover"
+                        alt="...">
+                    <p
+                        class="absolute top-1/2 left-1/2 text-white text-xl font-bold transform -translate-x-1/2 -translate-y-1/2">
+                        Conoce al creador de GUIHOS
+                    </p>
+                    <p
+                        class="absolute top-1/2 left-1/2 text-white transform text-justify hidden 2xl:block -translate-x-1/2 -translate-y-[-50%]">
+                        Conoce más sobre el autor detrás de GUIHOS: Ramón Antonio Crousset Núñez. Ramón Antonio es un
+                        estudiante de término de Ingeniería Biomédica en el Instituto Tecnológico de Santo Domingo (INTEC) y
+                        apasionado por el campo de la Ingeniería Clínica. Descubre su trayectoria académica, su dedicación a
+                        la mejora continua y su compromiso en contribuir al desarrollo de espacios hospitalarios eficientes
+                        y seguros.
+                    </p>
+                </nuxt-link>
             </div>
             <div id="carousel-item-3" class="hidden duration-700 ease-in-out">
-                <img src="@/assets/img/carousel-1.svg"
-                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <nuxt-link to="/catalog"
+                    class="absolute block w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <img src="@/assets/slider/plano.jpg" class="w-full brightness-[45%] object-center object-cover"
+                        alt="...">
+                    <p
+                        class="absolute top-1/2 left-1/2 text-white text-xl font-bold transform -translate-x-1/2 -translate-y-1/2">
+                        Explora nuestro catálogo
+                    </p>
+                    <p
+                        class="absolute top-1/2 left-1/2 text-white transform text-justify hidden 2xl:block -translate-x-1/2 -translate-y-[-50%]">
+                        Descubre las dos áreas hospitalarias que hemos desarrollado en nuestro proyecto. Nuestro catálogo
+                        presenta diseños especializados y detallados para cada una de estas áreas, enfocándose en ofrecer
+                        entornos funcionales, confortables y eficientes.
+                    </p>
+                </nuxt-link>
             </div>
             <div id="carousel-item-4" class="hidden duration-700 ease-in-out">
-                <img src="@/assets/img/carousel-1.svg"
-                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <nuxt-link to="/directrices"
+                    class="absolute block w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <img src="@/assets/slider/coroDeLoco.jpg" class="w-full brightness-[45%] object-center object-cover"
+                        alt="...">
+                    <p
+                        class="absolute top-1/2 left-1/2 text-white text-xl font-bold transform -translate-x-1/2 -translate-y-1/2">
+                        Directrices
+                    </p>
+                    <p
+                        class="absolute top-1/2 left-1/2 text-white transform text-justify hidden 2xl:block -translate-x-1/2 -translate-y-[-50%]">
+                        Descubre nuestras directrices, un marco sólido y ampliamente utilizado por arquitectos y diseñadores
+                        de todo el mundo, para la creación de hospitales. Estas pautas proporcionan un enfoque estructurado
+                        y detallado para el diseño de instalaciones hospitalarias, teniendo en cuenta la funcionalidad, la
+                        seguridad y el bienestar de los pacientes y el personal médico.
+                    </p>
+                </nuxt-link>
             </div>
         </div>
+
+
         <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
             <button id="carousel-indicator-1" type="button" class="w-3 h-3 rounded-full"></button>
             <button id="carousel-indicator-2" type="button" class="w-3 h-3 rounded-full"></button>

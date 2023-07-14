@@ -1,16 +1,16 @@
 <template>
-    <div class="bg-white border border-gray-200 rounded-lg shadow h-52">
-        <div class="p-5 h-full flex flex-col justify-between">
-            <div>
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                        {{ info.title }}
-                    </h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700">
-                    {{ info.details }}
-                </p>
-            </div>
+    <div class="bg-white border h-fit border-gray-200 rounded-lg shadow ">
+        <div class="p-5 h-fit flex flex-col justify-between">
+
+            <h2 href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                    {{ info.title }}
+                </h5>
+            </h2>
+            <p class="mb-3 font-normal text-gray-700">
+                {{ info.details }}
+            </p>
+
             <div>
                 <nuxt-link :to="info.link1"
                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">

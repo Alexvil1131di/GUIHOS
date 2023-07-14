@@ -24,7 +24,15 @@
 
 
                     <nuxt-link to="/catalog" class="block py-2 px-6 rounded-md text-black bg-[#ffffff49] mb-1  ">
-                        Catalogo
+                        Catálogo
+                    </nuxt-link>
+
+                    <nuxt-link to="/directrices" class="block py-2 px-6 rounded-md text-black bg-[#ffffff49] mb-1  ">
+                        Directrices
+                    </nuxt-link>
+
+                    <nuxt-link to="/conocenos" class="block py-2 px-6 rounded-md text-black bg-[#ffffff49] mb-1  ">
+                        Conocenos
                     </nuxt-link>
 
                 </ul>
