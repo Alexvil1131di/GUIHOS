@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'ramon',
+    title: 'GUIHOS',
     htmlAttrs: {
       lang: 'en'
     },
@@ -38,5 +38,12 @@ export default {
   },
 
   build: {
+    extend(config, { isDev, isClient }) {
+      // Agrega el cargador para archivos PDF
+      config.module.rules.push({
+        test: /\.pdf|docx/,
+        use: 'raw-loader'
+      });
+    }
   }
 }

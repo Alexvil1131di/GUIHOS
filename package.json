@@ -1,5 +1,5 @@
 {
-  "name": "ramon",
+  "name": "guihos",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -20,6 +20,8 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^5.3.5",
-    "postcss": "^8.4.17"
+    "pdf-loader": "^1.0.2",
+    "postcss": "^8.4.17",
+    "raw-loader": "^4.0.2"
   }
 }

@@ -1,17 +1,38 @@
 [
   {
-    "name": "aboutUs",
-    "path": "/aboutUs",
-    "component": "/home/olijapa/Escritorio/ramon/pages/aboutUs.vue",
-    "chunkName": "pages/aboutUs",
-    "_name": "_9318bacc"
-  },
-  {
     "name": "catalog",
     "path": "/catalog",
     "component": "/home/olijapa/Escritorio/ramon/pages/catalog.vue",
     "chunkName": "pages/catalog",
     "_name": "_38354ca8"
+  },
+  {
+    "name": "conocenos",
+    "path": "/conocenos",
+    "component": "/home/olijapa/Escritorio/ramon/pages/conocenos.vue",
+    "chunkName": "pages/conocenos",
+    "_name": "_33a6f41c"
+  },
+  {
+    "name": "directrices",
+    "path": "/directrices",
+    "component": "/home/olijapa/Escritorio/ramon/pages/directrices.vue",
+    "chunkName": "pages/directrices",
+    "_name": "_6ba7e500"
+  },
+  {
+    "name": "opcion1",
+    "path": "/opcion1",
+    "component": "/home/olijapa/Escritorio/ramon/pages/opcion1.vue",
+    "chunkName": "pages/opcion1",
+    "_name": "_f8838b4c"
+  },
+  {
+    "name": "opcion2",
+    "path": "/opcion2",
+    "component": "/home/olijapa/Escritorio/ramon/pages/opcion2.vue",
+    "chunkName": "pages/opcion2",
+    "_name": "_f8675c4a"
   },
   {
     "name": "test",

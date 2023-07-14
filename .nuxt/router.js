@@ -4,8 +4,11 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _9318bacc = () => interopDefault(import('../pages/aboutUs.vue' /* webpackChunkName: "pages/aboutUs" */))
 const _38354ca8 = () => interopDefault(import('../pages/catalog.vue' /* webpackChunkName: "pages/catalog" */))
+const _33a6f41c = () => interopDefault(import('../pages/conocenos.vue' /* webpackChunkName: "pages/conocenos" */))
+const _6ba7e500 = () => interopDefault(import('../pages/directrices.vue' /* webpackChunkName: "pages/directrices" */))
+const _f8838b4c = () => interopDefault(import('../pages/opcion1.vue' /* webpackChunkName: "pages/opcion1" */))
+const _f8675c4a = () => interopDefault(import('../pages/opcion2.vue' /* webpackChunkName: "pages/opcion2" */))
 const _f52449da = () => interopDefault(import('../pages/test.vue' /* webpackChunkName: "pages/test" */))
 const _412342a1 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -21,13 +24,25 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
-    path: "/aboutUs",
-    component: _9318bacc,
-    name: "aboutUs"
-  }, {
     path: "/catalog",
     component: _38354ca8,
     name: "catalog"
+  }, {
+    path: "/conocenos",
+    component: _33a6f41c,
+    name: "conocenos"
+  }, {
+    path: "/directrices",
+    component: _6ba7e500,
+    name: "directrices"
+  }, {
+    path: "/opcion1",
+    component: _f8838b4c,
+    name: "opcion1"
+  }, {
+    path: "/opcion2",
+    component: _f8675c4a,
+    name: "opcion2"
   }, {
     path: "/test",
     component: _f52449da,
