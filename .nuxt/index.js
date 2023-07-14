@@ -1,5 +1,5 @@
 import Vue from 'vue'
-
+let pic = require('@/assets/logoGay.png')
 import Meta from 'vue-meta'
 import ClientOnly from 'vue-client-only'
 import NoSsr from 'vue-no-ssr'
@@ -21,7 +21,7 @@ Vue.component(ClientOnly.name, ClientOnly)
 // TODO: Remove in Nuxt 3: <NoSsr>
 Vue.component(NoSsr.name, {
   ...NoSsr,
-  render (h, ctx) {
+  render(h, ctx) {
     if (process.client && !NoSsr._warned) {
       NoSsr._warned = true
 
@@ -51,9 +51,9 @@ Object.defineProperty(Vue.prototype, '$nuxt', {
   configurable: true
 })
 
-Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n-head-ssr","tagIDKeyName":"hid"})
+Vue.use(Meta, { "keyName": "head", "attribute": "data-n-head", "ssrAttribute": "data-n-head-ssr", "tagIDKeyName": "hid" })
 
-const defaultTransition = {"name":"page","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
+const defaultTransition = { "name": "page", "mode": "out-in", "appear": false, "appearClass": "appear", "appearActiveClass": "appear-active", "appearToClass": "appear-to" }
 
 async function createApp(ssrContext, config = {}) {
   const store = null
@@ -64,13 +64,13 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"GUIHOS","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Roboto&display=swap"}],"style":[],"script":[]},
+    head: { "title": "GUIHOS", "htmlAttrs": { "lang": "en" }, "meta": [{ "charset": "utf-8" }, { "name": "viewport", "content": "width=device-width, initial-scale=1" }, { "hid": "description", "name": "description", "content": "" }, { "name": "format-detection", "content": "telephone=no" }], "link": [{ "rel": "icon", "type": "image/png", "href": pic }, { "rel": "stylesheet", "href": "https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Roboto&display=swap" }], "style": [], "script": [] },
 
     router,
     nuxt: {
       defaultTransition,
       transitions: [defaultTransition],
-      setTransitions (transitions) {
+      setTransitions(transitions) {
         if (!Array.isArray(transitions)) {
           transitions = [transitions]
         }
@@ -90,7 +90,7 @@ async function createApp(ssrContext, config = {}) {
 
       err: null,
       dateErr: null,
-      error (err) {
+      error(err) {
         err = err || null
         app.context._errored = Boolean(err)
         err = err ? normalizeError(err) : null
@@ -159,7 +159,7 @@ async function createApp(ssrContext, config = {}) {
     Vue.use(() => {
       if (!Object.prototype.hasOwnProperty.call(Vue.prototype, key)) {
         Object.defineProperty(Vue.prototype, key, {
-          get () {
+          get() {
             return this.$root.$options[key]
           }
         })

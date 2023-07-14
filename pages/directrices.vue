@@ -8,7 +8,7 @@
             proporcionan un enfoque estructurado y detallado para el diseño de instalaciones hospitalarias, teniendo en
             cuenta la funcionalidad, la seguridad y el bienestar de los pacientes y el personal médico.
         </p>
-        <embed class="h-screen w-[85%]" src="https://drive.google.com/file/d/1W4uYRYHzQtWWnSQXB3MuZYw-uYP7idb5/preview"
+        <embed class="h-screen w-[85%]" src="https://drive.google.com/file/d/1r1xs2MTm-h_JK0xkmnnoMgFWbi9vKFLD/preview"
             type="application/pdf" />
     </div>
 </template>
