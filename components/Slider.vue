@@ -5,7 +5,7 @@
             <div id="carousel-item-1" class="hidden duration-700 ease-in-out">
                 <nuxt-link to="/conocenos#queEsGuihos"
                     class="absolute block w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <img src="@/assets/slider/logoWhite.png" class="w-full brightness-[45%] object-center object-cover"
+                    <img src="@/assets/slider/logoWhite.png" class="w-full brightness-custom  object-center object-cover"
                         alt="...">
                     <p
                         class="absolute top-1/2 left-1/2 text-white text-xl font-bold transform -translate-x-1/2 -translate-y-1/2">
@@ -23,7 +23,7 @@
             <div id="carousel-item-2" class="hidden duration-700 ease-in-out">
                 <nuxt-link to="/conocenos"
                     class="absolute block w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <img src="@/assets/slider/ramonGay.jpg" class="w-full brightness-[45%] object-center object-cover"
+                    <img src="@/assets/slider/ramonGay.jpg" class="w-full brightness-custom  object-center object-cover"
                         alt="...">
                     <p
                         class="absolute top-1/2 left-1/2 text-white text-xl font-bold transform -translate-x-1/2 -translate-y-1/2">
@@ -42,7 +42,7 @@
             <div id="carousel-item-3" class="hidden duration-700 ease-in-out">
                 <nuxt-link to="/catalog"
                     class="absolute block w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <img src="@/assets/slider/plano.jpg" class="w-full brightness-[45%] object-center object-cover"
+                    <img src="@/assets/slider/plano.jpg" class="w-full brightness-custom  object-center object-cover"
                         alt="...">
                     <p
                         class="absolute top-1/2 left-1/2 text-white text-xl font-bold transform -translate-x-1/2 -translate-y-1/2">
@@ -59,7 +59,7 @@
             <div id="carousel-item-4" class="hidden duration-700 ease-in-out">
                 <nuxt-link to="/directrices"
                     class="absolute block w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <img src="@/assets/slider/coroDeLoco.jpg" class="w-full brightness-[45%] object-center object-cover"
+                    <img src="@/assets/slider/coroDeLoco.jpg" class="w-full brightness-custom  object-center object-cover"
                         alt="...">
                     <p
                         class="absolute top-1/2 left-1/2 text-white text-xl font-bold transform -translate-x-1/2 -translate-y-1/2">
@@ -193,3 +193,9 @@ export default {
     },
 }
 </script>
+
+<style scoped>
+.brightness-custom {
+    filter: brightness(35%);
+}
+</style>
